@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-<<<<<<< HEAD
 const leadership = [
   {
     name: "Sr. Mary Thomas",
@@ -52,32 +51,6 @@ const facultyHighlights = [
     role: "Sports Coordinator",
     image: "/images/faculty-4.jpg",
     bio: "B.P.Ed, M.P.Ed - Former state-level athlete promoting fitness and sportsmanship.",
-=======
-const faculty = [
-  {
-    name: "Lily Aquaria",
-    role: "Head of Graphic Design",
-    image: "/images/latest.webp",
-    bio: "Award-winning designer with 15+ years of branding experience across Fortune 500 companies.",
-  },
-  {
-    name: "David Chen",
-    role: "UX/UI Program Lead",
-    image: "/images/faculty-2.jpg",
-    bio: "Former lead product designer at a top tech company; passionate about human-centered design.",
-  },
-  {
-    name: "Amara Osei",
-    role: "Photography Instructor",
-    image: "/images/faculty-3.jpg",
-    bio: "Published photographer whose work has appeared in international galleries and design magazines.",
-  },
-  {
-    name: "Robert Hale",
-    role: "Dean of Students",
-    image: "/images/faculty-4.jpg",
-    bio: "Dedicated educator focused on mentoring the next generation of creative professionals.",
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
   },
 ];
 
@@ -85,7 +58,6 @@ export function MeetTheTeam() {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-<<<<<<< HEAD
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
             Meet Our Team
@@ -178,36 +150,6 @@ export function MeetTheTeam() {
               practices.
             </p>
           </div>
-=======
-        <h2 className="text-center font-heading text-3xl font-bold text-foreground md:text-4xl mb-12">
-          Meet our Sisters
-        </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {faculty.map((person) => (
-            <div
-              key={person.name}
-              className="flex flex-col items-center text-center rounded-lg border border-border bg-card p-6"
-            >
-              <div className="relative h-28 w-28 overflow-hidden rounded-full mb-4">
-                <Image
-                  src={person.image}
-                  alt={person.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-heading text-base font-semibold text-card-foreground">
-                {person.name}
-              </h3>
-              <span className="text-sm font-medium text-primary">
-                {person.role}
-              </span>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {person.bio}
-              </p>
-            </div>
-          ))}
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
         </div>
       </div>
     </section>

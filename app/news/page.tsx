@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-<<<<<<< HEAD
 import { Newspaper, Filter } from "lucide-react";
-=======
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
 import { NewsFeed } from "@/components/news/news-feed";
 import { NewsSidebar } from "@/components/news/news-sidebar";
 
@@ -15,7 +12,6 @@ export const metadata: Metadata = {
 export default function NewsPage() {
   return (
     <>
-<<<<<<< HEAD
       <section className="relative bg-gradient-to-br from-secondary via-secondary to-primary/10 py-16 lg:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -69,23 +65,11 @@ export default function NewsPage() {
               </div>
             </div>
           </div>
-=======
-      <section className="bg-secondary py-14 lg:py-18">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <h1 className="font-heading text-3xl font-extrabold text-secondary-foreground md:text-5xl text-balance text-center">
-            News &amp; Updates
-          </h1>
-          <p className="mt-3 text-center text-muted-foreground max-w-lg mx-auto leading-relaxed">
-            The latest happenings from campus, student achievements, and
-            upcoming events.
-          </p>
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
         </div>
       </section>
 
       <section className="py-12 lg:py-20 bg-background">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-<<<<<<< HEAD
           {/* Filters Bar */}
           <div className="flex items-center justify-between mb-8 pb-6 border-b border-border">
             <p className="text-sm text-muted-foreground">
@@ -102,13 +86,6 @@ export default function NewsPage() {
               <NewsFeed />
             </div>
             <aside className="lg:basis-[32%]">
-=======
-          <div className="flex flex-col gap-10 lg:flex-row">
-            <div className="flex-1 lg:basis-[70%]">
-              <NewsFeed />
-            </div>
-            <aside className="lg:basis-[30%]">
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
               <NewsSidebar />
             </aside>
           </div>

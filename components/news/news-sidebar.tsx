@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 import { useState } from "react";
@@ -64,29 +63,6 @@ export function NewsSidebar() {
       <div className="rounded-lg border border-border bg-card p-5 shadow-sm">
         <h3 className="font-heading text-base font-semibold text-card-foreground mb-4 flex items-center gap-2">
           <Tag className="h-4 w-4 text-primary" />
-=======
-"use client"
-
-import { useState } from "react"
-import { cn } from "@/lib/utils"
-
-const categories = [
-  "All",
-  "Events",
-  "Announcements",
-  "Student Spotlights",
-]
-
-export function NewsSidebar() {
-  const [active, setActive] = useState("All")
-  const [email, setEmail] = useState("")
-
-  return (
-    <div className="flex flex-col gap-8">
-      {/* Categories */}
-      <div className="rounded-lg border border-border bg-card p-5">
-        <h3 className="font-heading text-base font-semibold text-card-foreground mb-4">
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
           Categories
         </h3>
         <div className="flex flex-wrap gap-2">
@@ -95,17 +71,10 @@ export function NewsSidebar() {
               key={cat}
               onClick={() => setActive(cat)}
               className={cn(
-<<<<<<< HEAD
                 "rounded-md px-3 py-1.5 text-sm font-medium transition-all duration-200",
                 active === cat
                   ? "bg-primary text-primary-foreground shadow-md"
                   : "border border-border text-card-foreground hover:bg-primary/10 hover:border-primary/50",
-=======
-                "rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
-                active === cat
-                  ? "bg-primary text-primary-foreground"
-                  : "border border-primary text-primary hover:bg-primary/10"
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
               )}
             >
               {cat}
@@ -114,7 +83,6 @@ export function NewsSidebar() {
         </div>
       </div>
 
-<<<<<<< HEAD
       {/* Recent Posts */}
       <div className="rounded-lg border border-border bg-card p-5 shadow-sm">
         <h3 className="font-heading text-base font-semibold text-card-foreground mb-4 flex items-center gap-2">
@@ -196,43 +164,9 @@ export function NewsSidebar() {
             className="rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-all duration-200 shadow-sm hover:shadow-md"
           >
             Subscribe Now
-=======
-      {/* Newsletter */}
-      <div className="rounded-lg border border-border bg-card p-5">
-        <h3 className="font-heading text-base font-semibold text-card-foreground mb-2">
-          Subscribe to Newsletter
-        </h3>
-        <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-          Get the latest news delivered straight to your inbox.
-        </p>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault()
-            setEmail("")
-          }}
-          className="flex flex-col gap-3"
-        >
-          <input
-            type="email"
-            placeholder="Your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-          />
-          <button
-            type="submit"
-            className="rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-          >
-            Subscribe
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
           </button>
         </form>
       </div>
     </div>
-<<<<<<< HEAD
   );
-=======
-  )
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
 }

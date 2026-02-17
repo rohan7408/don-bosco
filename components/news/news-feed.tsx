@@ -1,15 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-<<<<<<< HEAD
 import { Calendar, Clock, ArrowRight, User } from "lucide-react";
-=======
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
 import { newsArticles } from "@/lib/news-data";
 
 export function NewsFeed() {
   return (
     <div className="flex flex-col gap-8">
-<<<<<<< HEAD
       {newsArticles.map((article, index) => {
         // Calculate reading time
         const wordCount = article.content.split(/\s+/).length;
@@ -88,46 +84,6 @@ export function NewsFeed() {
           </article>
         );
       })}
-=======
-      {newsArticles.map((article) => (
-        <article
-          key={article.title}
-          className="group overflow-hidden rounded-lg border border-border bg-card flex flex-col sm:flex-row"
-        >
-          <div className="relative h-52 sm:h-auto sm:w-64 shrink-0 overflow-hidden">
-            <Image
-              src={article.image}
-              alt={article.title}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors" />
-          </div>
-          <div className="flex flex-col justify-center p-5">
-            <div className="flex items-center gap-3 mb-2">
-              <time className="text-xs font-semibold uppercase tracking-wider text-primary">
-                {article.date}
-              </time>
-              <span className="text-xs text-muted-foreground">
-                {article.category}
-              </span>
-            </div>
-            <h3 className="font-heading text-lg font-semibold leading-snug text-card-foreground">
-              {article.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-3">
-              {article.excerpt}
-            </p>
-            <Link
-              href={`/news/${article.slug}`}
-              className="mt-3 inline-block text-sm font-semibold text-primary hover:underline"
-            >
-              Read More
-            </Link>
-          </div>
-        </article>
-      ))}
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
     </div>
   );
 }

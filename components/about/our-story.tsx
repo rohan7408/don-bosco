@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Calendar, Users, Award, TrendingUp } from "lucide-react";
 
 const timeline = [
@@ -143,25 +142,6 @@ export function OurStory() {
             </p>
           </div>
         </div>
-=======
-export function OurStory() {
-  return (
-    <section className="py-16 lg:py-24 bg-background">
-      <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
-        <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
-          Our Story
-        </h2>
-        <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-          Don Bosco school was founded in 2005 by a collective of designers,
-          educators, and industry veterans who saw a gap between traditional art
-          education and the demands of the modern creative economy. What started
-          as a small studio workshop with 30 students has grown into a
-          nationally recognized institution enrolling over 1,200 learners each
-          year. Our curriculum blends hands-on craft with cutting-edge
-          technology, preparing graduates to lead in fields ranging from brand
-          strategy to immersive media.
-        </p>
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
       </div>
     </section>
   );
