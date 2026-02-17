@@ -9,7 +9,6 @@
 }
 
 @layer base {
-<<<<<<< HEAD
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -33,8 +32,6 @@
 }
 
 @layer base {
-=======
->>>>>>> 58d541f95962b39a8299eef669185ff5361ef304
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 29%;
